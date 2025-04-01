@@ -1,5 +1,13 @@
-salario = float(input("Informe seu salário: "))
 nome = input("Informe seu nome: ")
-idade = int(input("Informe sua idade: "))
+#idade = int(input("Informe sua idade: "))
 
-print(f"Seu nome é: {nome} \n sua idade é: {idade} \n seu salário é: {salario}")
+salario = float(input("Informe seu salário: "))
+percentualAumento = float(input("Informe o percentual de aumento desejado: "))
+caculoPercentual = (salario * percentualAumento) / 100
+salarioTotal = salario + caculoPercentual
+
+print(f"Olá {nome}! \n "
+      f"Seu salário é: R${salario:.2f} \n"
+      f" você terá R${caculoPercentual:.2f} de aumento \n"
+      f" Seu novo salário é: R${salarioTotal:.2f}")
+
