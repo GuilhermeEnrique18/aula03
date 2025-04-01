@@ -8,4 +8,7 @@ media = (n1 + n2 + n3) / 3
 if media >= 7:
     print(f"Aprovado! Sua média foi {media}")
 else:
-    print(f"Reprovado!Sua média foi {media}")
+    if media < 4:
+        print(f"Reprovado!Sua média foi {media}")
+    else:
+        print(f"Recuperação!Sua média foi {media}")
